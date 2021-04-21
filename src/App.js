@@ -4,7 +4,7 @@ export default function App() {
   return (
     <div className="App">
 
-      <div className="heading">   
+      <div className="heading">         
         <button className="reset">Reset</button>
         <h1 className="title">TITLE</h1>
         <div>
