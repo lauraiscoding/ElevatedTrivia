@@ -7,25 +7,54 @@
       "name": "math",
       "questions": [
         {
-          "question": "What is 2 + 2",
+          "question": "What is 40% of 120?",
           "choices": ["1", "2", "0", "4"],
           "answer": 3,
           "points": 100
         },
         {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
+          "question": "What is largest angle of an equilateral triangle?(in degrees)",
+          "choices": ["1", "2", "0", "60"],
           "answer": 3,
           "points": 200
         },
         {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
+          "question": "What is sin(30)?",
+          "choices": ["1", "2", "0", "1/2"],
           "answer": 3,
           "points": 300
         },
         {
-          "question": "What is 2 + 2",
+          "question": "What is the antiderivative of 49x^6?",
+          "choices": ["1", "2", "0", "7x^7"],
+          "answer": 3,
+          "points": 400
+        }
+      ]
+    },
+    {
+      "name": "science",
+      "questions": [
+        {
+          "question": "What is the powerhouse of the cell?",
+          "choices": ["1", "2", "0", "4"],
+          "answer": 3,
+          "points": 100
+        },
+        {
+          "question": "What is of gravity",
+          "choices": ["1", "2", "0", "9.81 m/s^2"],
+          "answer": 3,
+          "points": 200
+        },
+        {
+          "question": "What happens if you step into a blackhole?(theory)",
+          "choices": ["1", "2", "0", "spaghetti time!"],
+          "answer": 3,
+          "points": 300
+        },
+        {
+          "question": "What is the mass of 5 moles of KOH?",
           "choices": ["1", "2", "0", "4"],
           "answer": 3,
           "points": 400
@@ -33,7 +62,7 @@
       ]
     },
     {
-      "name": "math",
+      "name": "history",
       "questions": [
         {
           "question": "What is 2 + 2",
@@ -42,8 +71,8 @@
           "points": 100
         },
         {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
+          "question": "How many countries has Britain NOT invaded?",
+          "choices": ["1", "2", "0", "5"],
           "answer": 3,
           "points": 200
         },
@@ -62,36 +91,7 @@
       ]
     },
     {
-      "name": "math",
-      "questions": [
-        {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
-          "answer": 3,
-          "points": 100
-        },
-        {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
-          "answer": 3,
-          "points": 200
-        },
-        {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
-          "answer": 3,
-          "points": 300
-        },
-        {
-          "question": "What is 2 + 2",
-          "choices": ["1", "2", "0", "4"],
-          "answer": 3,
-          "points": 400
-        }
-      ]
-    },
-    {
-      "name": "math",
+      "name": "art",
       "questions": [
         {
           "question": "What is 2 + 2",
