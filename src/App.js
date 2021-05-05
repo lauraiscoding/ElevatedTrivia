@@ -1,11 +1,15 @@
 import styles from "./styles.scss";
 import data from "./data.json";
+import Modul from "./questionmodul";
+import { useState } from "react";
 export default function App() {
   console.log(data);
 
+  const [cardState, setCardState] = useState(false);
   const { title, score, sections } = data;
   return (
     <div className="App">
+      {cardState ? <Modul /> : null}
       <div className="heading">
         <button className="reset">Reset</button>
         <h1 className="title">{title}</h1>
@@ -18,11 +22,15 @@ export default function App() {
           return (
             <div className="container">
               <div className="square">{name}</div>
-              {questions.map(({ points }) => {
+              {questions.map(({ question, points }) => {
                 return (
                   <div>
-                    <button className="questions">
+                    <button
+                      className="questions"
+                      onClick={() => setCardState(!cardState)}
+                    >
                       <div>{points}</div>
+                      {/* {cardState ? <Modul /> : null} */}
                     </button>
                   </div>
                 );
@@ -31,6 +39,7 @@ export default function App() {
           );
         })}
       </div>
+      {/* t=modal was here */}
     </div>
   );
 }
