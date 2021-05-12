@@ -7,6 +7,7 @@ export default function App() {
 
   const [cardState, setCardState] = useState(false);
   const { title, score, sections } = data;
+  const [currentQuestion, setCurrentQuestion] = useState(null);
   return (
     <div className="App">
       {cardState ? <Modul /> : null}
@@ -22,12 +23,21 @@ export default function App() {
           return (
             <div className="container">
               <div className="square">{name}</div>
-              {questions.map(({ question, points }) => {
+              {questions.map(({ question, points, choices, answer}) => {
                 return (
                   <div>
                     <button
                       className="questions"
-                      onClick={() => setCardState(!cardState)}
+                      onClick={() => {setCardState(!cardState)
+                      setCurrentQuestion({
+                        points: points, 
+                        section: name, 
+                        question: question,
+                        choices: choices,
+                        answer: answer,
+                                            })
+                      }
+                    }
                     >
                       <div>{points}</div>
                       {/* {cardState ? <Modul /> : null} */}
