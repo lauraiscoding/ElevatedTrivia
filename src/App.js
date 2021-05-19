@@ -10,7 +10,7 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   return (
     <div className="App">
-      {cardState ? <Modul /> : null}
+      {cardState ? <Modul  currentQuestion={currentQuestion} /> : null}
       <div className="heading">
         <button className="reset">Reset</button>
         <h1 className="title">{title}</h1>
