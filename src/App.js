@@ -10,7 +10,7 @@ export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   return (
     <div className="App">
-      {cardState ? <Modul  currentQuestion={currentQuestion} /> : null}
+      {cardState ? <Modul currentQuestion={currentQuestion} /> : null}
       <div className="heading">
         <button className="reset">Reset</button>
         <h1 className="title">{title}</h1>
@@ -23,21 +23,21 @@ export default function App() {
           return (
             <div className="container">
               <div className="square">{name}</div>
-              {questions.map(({ question, points, choices, answer}) => {
+              {questions.map(({ question, points, choices, answer }) => {
                 return (
                   <div>
                     <button
                       className="questions"
-                      onClick={() => {setCardState(!cardState)
-                      setCurrentQuestion({
-                        points: points, 
-                        section: name, 
-                        question: question,
-                        choices: choices,
-                        answer: answer,
-                                            })
-                      }
-                    }
+                      onClick={() => {
+                        setCardState(!cardState);
+                        setCurrentQuestion({
+                          points: points,
+                          section: name,
+                          question: question,
+                          choices: choices,
+                          answer: answer
+                        });
+                      }}
                     >
                       <div>{points}</div>
                       {/* {cardState ? <Modul /> : null} */}
