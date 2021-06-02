@@ -7,15 +7,18 @@ export default function App() {
 
   const [cardState, setCardState] = useState(false);
   const { title, score, sections } = data;
-  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [currentQuestion, setCurrentQuestion] = useState(undefined);
+
   return (
     <div className="App">
-      {cardState ? <Modul currentQuestion={currentQuestion} /> : null}
+      {cardState ? (
+        <Modul currentQuestion={currentQuestion} score={score} />
+      ) : null}
       <div className="heading">
         <button className="reset">Reset</button>
         <h1 className="title">{title}</h1>
         <div>
-          <h2>{score}</h2>
+          <h2>Score: {score}</h2>
         </div>
       </div>
       <div className="board">
