@@ -34,6 +34,7 @@ export default function Modul(props) {
       {choices.map((choice, index) => (
         <div>
           <button
+            id="buttonChoices"
             className="buttonchoices"
             onClick={() => handleClick(index, answer)}
           >
@@ -41,9 +42,9 @@ export default function Modul(props) {
           </button>
         </div>
       ))}
-      {answerValue ? wrongChoice : rightChoice}
+      {answerValue === false ? wrongChoice : rightChoice}
     </div>
-    // if (button is cliked && wrong choice)
+    // if (button.cliked && wrong choice)
     //return wrong
     // else if (button is clicked && right choice)
     //return right + add points
