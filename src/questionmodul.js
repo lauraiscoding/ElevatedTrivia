@@ -47,15 +47,6 @@ export default function Modul(props) {
         </div>
       ))}
       {answerMessage}
-      {/* {answerValue === false ? wrongChoice : rightChoice} */}
     </div>
-    // if (button.cliked && wrong choice)
-    //return wrong
-    // else if (button is clicked && right choice)
-    //return right + add points
   );
 }
-//
-//<button
-//onClick={() => setCurrentScore(currentScore + props.pointsEarned)}
-//   >
