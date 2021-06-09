@@ -9,6 +9,9 @@ export default function Modul(props) {
   const [answerValue, setAnswerValue] = useState(false);
   // create hook to change value
 
+  const [answerMessage, setAnswerMessage] = useState("");
+  // create hook to change value
+
   // creating score hook to update stat
   const [scoreValue, setScoreValue] = useState(score);
 
@@ -17,16 +20,17 @@ export default function Modul(props) {
   // console.log("scoreeeee--", scoreValue);
 
   function handleClick(index, answer) {
-    console.log(index);
+    const wrongChoice = "sorry you got it wrong!";
+    const rightChoice = "you got it right!!";
     if (index === answer) {
-      console.log("you clicked the right answer", answerValue);
       setAnswerValue(true);
-      return answerValue;
+      setAnswerMessage(rightChoice);
+    } else {
+      setAnswerValue(false);
+      setAnswerMessage(wrongChoice);
     }
     return answerValue;
   }
-  const wrongChoice = "sorry you got it wrong!";
-  const rightChoice = "you got it right!!";
 
   return (
     <div className="modal">
@@ -42,7 +46,8 @@ export default function Modul(props) {
           </button>
         </div>
       ))}
-      {answerValue === false ? wrongChoice : rightChoice}
+      {answerMessage}
+      {/* {answerValue === false ? wrongChoice : rightChoice} */}
     </div>
     // if (button.cliked && wrong choice)
     //return wrong
